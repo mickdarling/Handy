@@ -166,9 +166,11 @@ If you're behind a proxy, firewall, or in a restricted network environment where
 
 The typical paths are:
 
-- **macOS**: `~/Library/Application Support/com.pais.handy/`
-- **Windows**: `C:\Users\{username}\AppData\Roaming\com.pais.handy\`
-- **Linux**: `~/.config/com.pais.handy/`
+- **macOS**: `~/Library/Application Support/com.mickdarling.dolly/`
+- **Windows**: `C:\Users\{username}\AppData\Roaming\com.mickdarling.dolly\`
+- **Linux**: `~/.config/com.mickdarling.dolly/`
+
+Note: upstream Handy uses `com.pais.handy`, so its paths differ.
 
 #### Step 2: Create Models Directory
 
@@ -176,10 +178,10 @@ Inside your app data directory, create a `models` folder if it doesn't already e
 
 ```bash
 # macOS/Linux
-mkdir -p ~/Library/Application\ Support/com.pais.handy/models
+mkdir -p ~/Library/Application\ Support/com.mickdarling.dolly/models
 
 # Windows (PowerShell)
-New-Item -ItemType Directory -Force -Path "$env:APPDATA\com.pais.handy\models"
+New-Item -ItemType Directory -Force -Path "$env:APPDATA\com.mickdarling.dolly\models"
 ```
 
 #### Step 3: Download Model Files

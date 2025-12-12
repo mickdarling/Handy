@@ -600,11 +600,11 @@ async fn fetch_models_manual(
     let mut headers = reqwest::header::HeaderMap::new();
     headers.insert(
         "HTTP-Referer",
-        reqwest::header::HeaderValue::from_static("https://github.com/cjpais/Handy"),
+        reqwest::header::HeaderValue::from_static("https://github.com/mickdarling/Handy"),
     );
     headers.insert(
         "X-Title",
-        reqwest::header::HeaderValue::from_static("Handy"),
+        reqwest::header::HeaderValue::from_static("Dolly"),
     );
 
     // Add provider-specific headers
