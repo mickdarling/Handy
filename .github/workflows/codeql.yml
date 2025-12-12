@@ -33,6 +33,8 @@ jobs:
   analyze-rust:
     name: Analyze (Rust)
     runs-on: ubuntu-22.04
+    # Rust CodeQL can be slow; run it on pushes/schedule, not PRs.
+    if: github.event_name != 'pull_request'
     permissions:
       security-events: write
       actions: read
